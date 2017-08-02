@@ -1,3 +1,13 @@
+# CodeIgniter 3 Tutorial
+
+## Run
+
+```console
+$ docker run -d -p 8080:80 -v $(pwd):/var/www --name ci3-tutorial 178inaba/php7-nginx
+```
+
+---
+
 # What is CodeIgniter
 
 CodeIgniter is an Application Development Framework - a toolkit - for people
