@@ -3,7 +3,14 @@
 ## Run
 
 ```console
-$ docker run -d -p 8080:80 -v $(pwd):/var/www --name ci3-tutorial 178inaba/php7-nginx
+# Run MariaDB.
+$ docker run -d -p 3366:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name maria mariadb:10
+$ mysqladmin ping -h 127.0.0.1 -P 3366 -u root
+mysqld is alive
+$ mysql -h 127.0.0.1 -P 3366 -u root < misc/sql/ddl.sql
+
+# Run application.
+$ docker run -d -p 8080:80 -v $(pwd):/var/www --link maria --name ci3-tutorial 178inaba/php7-nginx
 ```
 
 ---
