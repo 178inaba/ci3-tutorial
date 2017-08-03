@@ -5,8 +5,12 @@
 ```console
 # Run MariaDB.
 $ docker run -d -p 3366:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name maria mariadb:10
+
+# Please repeat until you succeed.
 $ mysqladmin ping -h 127.0.0.1 -P 3366 -u root
 mysqld is alive
+
+# Run ddl.sql.
 $ mysql -h 127.0.0.1 -P 3366 -u root < misc/sql/ddl.sql
 
 # Run application.
