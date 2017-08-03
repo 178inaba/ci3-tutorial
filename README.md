@@ -21,6 +21,14 @@ $ docker run -d -p 8080:80 -v $(pwd):/var/www --link maria --name ci3-tutorial 1
 
 Open http://localhost:8080/ in your browser.
 
+## License
+
+[MIT](LICENSE)
+
+## Author
+
+[178inaba](https://github.com/178inaba)
+
 ---
 
 # What is CodeIgniter
