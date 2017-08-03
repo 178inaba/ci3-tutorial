@@ -1,5 +1,7 @@
 # CodeIgniter 3 Tutorial
 
+This application is the result of CodeIgniter 3 tutorial.
+
 ## Run
 
 ```console
