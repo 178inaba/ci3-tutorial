@@ -17,6 +17,8 @@ $ mysql -h 127.0.0.1 -P 3366 -u root < misc/sql/ddl.sql
 $ docker run -d -p 8080:80 -v $(pwd):/var/www --link maria --name ci3-tutorial 178inaba/php7-nginx
 ```
 
+Open http://localhost:8080/ in your browser.
+
 ---
 
 # What is CodeIgniter
